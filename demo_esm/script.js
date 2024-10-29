@@ -1,5 +1,5 @@
-import { Map, TileLayer } from 'leaflet';
-import { LocateControl } from '../dist/L.Control.Locate.esm.js';
+import { Map, TileLayer } from "leaflet";
+import { LocateControl } from "../dist/L.Control.Locate.esm.js";
 
 const osmUrl = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
 const osmAttrib = 'Map data © <a href="http://osm.org/copyright">OpenStreetMap</a> contributors';
@@ -15,10 +15,8 @@ let map = new Map("map", {
   zoomControl: true
 });
 
-
 let lc = new LocateControl({
-    strings: {
-      title: "Show me where I am, yo!"
-    }
-  })
-  .addTo(map);
+  strings: {
+    title: "Show me where I am, yo!"
+  }
+}).addTo(map);

@@ -68,10 +68,7 @@ module.exports = function (grunt) {
     },
     rollup: {
       options: {
-        plugins: [
-          require("@rollup/plugin-node-resolve").nodeResolve(),
-          require("@rollup/plugin-commonjs")()
-        ]
+        plugins: [require("@rollup/plugin-node-resolve").nodeResolve(), require("@rollup/plugin-commonjs")()]
       },
       build_es: {
         options: {
