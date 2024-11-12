@@ -18,8 +18,6 @@ Please check for [breaking changes in the changelog](https://github.com/domoritz
 
 ### Set up:
 
-tl;dr
-
 1. Get CSS and JavaScript files
 2. Include CSS and JavaScript files
 3. Initialize plugin
@@ -54,6 +52,15 @@ import "leaflet.locatecontrol"; // Import plugin
 import "leaflet.locatecontrol/dist/L.Control.Locate.min.css"; // Import styles
 import L from "leaflet"; // Import L from leaflet to start using the plugin
 ```
+
+If you are using a bundler or esm, use
+
+```ts
+import { LocateControl } from "leaflet.locatecontrol";
+import "leaflet.locatecontrol/dist/L.Control.Locate.min.css";
+```
+
+Then use `new LocateControl()` instead of `L.control.locate()`.
 
 #### Add the following snippet to your map initialization:
 
