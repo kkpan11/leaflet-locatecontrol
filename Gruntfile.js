@@ -50,6 +50,7 @@ module.exports = function (grunt) {
         files: ["package.json", "bower.json"],
         commitFiles: [
           "package.json",
+          "package-lock.json",
           "bower.json",
           "dist/L.Control.Locate.css",
           "dist/L.Control.Locate.min.css",
